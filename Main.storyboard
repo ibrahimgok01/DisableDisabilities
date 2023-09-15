@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="engelsizDuraklarPrototip1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-9d-n3b">
+                                <rect key="frame" x="70" y="288" width="235" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="GLB-9K-UBe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Bilgi al">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgZ-2z-1fy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engelsiz Duraklar - Prototip 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-KR-pzX">
+                                <rect key="frame" x="62" y="626" width="251" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="10m-tN-aJZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="istockphoto-1136216828-612x612-cutout" translatesAutoresizingMaskIntoConstraints="NO" id="M3n-Er-vQ6">
+                                <rect key="frame" x="67" y="104" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DU4-aq-D0S"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-5o-Lod">
+                                <rect key="frame" x="70" y="418" width="235" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="DpD-Df-tvg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Otobüs Seç">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOg-8g-XQj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M3n-Er-vQ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="438-QM-y3B"/>
+                            <constraint firstItem="gNR-9d-n3b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="97Z-ai-Xfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lJw-KR-pzX" secondAttribute="bottom" constant="98" id="F0E-3M-bcv"/>
+                            <constraint firstItem="M3n-Er-vQ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="PCJ-yt-QOT"/>
+                            <constraint firstItem="dW8-5o-Lod" firstAttribute="top" secondItem="gNR-9d-n3b" secondAttribute="bottom" constant="23" id="Q8v-Mb-cQU"/>
+                            <constraint firstItem="gNR-9d-n3b" firstAttribute="top" secondItem="M3n-Er-vQ6" secondAttribute="bottom" constant="56" id="QIz-VU-TWE"/>
+                            <constraint firstItem="gNR-9d-n3b" firstAttribute="leading" secondItem="dW8-5o-Lod" secondAttribute="leading" id="SQr-0H-G4v"/>
+                            <constraint firstItem="dW8-5o-Lod" firstAttribute="centerX" secondItem="lJw-KR-pzX" secondAttribute="centerX" id="a50-bu-kRr"/>
+                            <constraint firstItem="M3n-Er-vQ6" firstAttribute="centerX" secondItem="gNR-9d-n3b" secondAttribute="centerX" id="dYP-xz-1WL"/>
+                            <constraint firstItem="lJw-KR-pzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="fPE-Up-j9d"/>
+                            <constraint firstItem="M3n-Er-vQ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="wpH-Sx-y3N"/>
+                            <constraint firstItem="gNR-9d-n3b" firstAttribute="trailing" secondItem="dW8-5o-Lod" secondAttribute="trailing" id="zEl-5O-uL1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="dW8-5o-Lod" id="b7h-yT-Zyz"/>
+                        <segue destination="Erc-3R-EdY" kind="presentation" identifier="toMainToActive" modalPresentationStyle="fullScreen" id="3SZ-D7-8sB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="3"/>
+        </scene>
+        <!--ActiveVC-->
+        <scene sceneID="rZV-iV-eV9">
+            <objects>
+                <viewController id="Erc-3R-EdY" customClass="ActiveVC" customModule="engelsizDuraklarPrototip1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7lh-gp-w1f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headphones" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iET-8A-UfR">
+                                <rect key="frame" x="70" y="300.33333333333331" width="235" height="211.66666666666669"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LPR-ps-qgK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iET-8A-UfR" firstAttribute="centerY" secondItem="7lh-gp-w1f" secondAttribute="centerY" id="1J1-Eo-hCr"/>
+                            <constraint firstItem="iET-8A-UfR" firstAttribute="centerX" secondItem="7lh-gp-w1f" secondAttribute="centerX" id="CBQ-Ra-WfM"/>
+                            <constraint firstItem="iET-8A-UfR" firstAttribute="leading" secondItem="LPR-ps-qgK" secondAttribute="leading" constant="70" id="dPC-4a-O0E"/>
+                            <constraint firstItem="iET-8A-UfR" firstAttribute="top" secondItem="LPR-ps-qgK" secondAttribute="top" constant="299.99999999999994" id="oUx-KA-tum"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b2Q-5s-d3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1B-Xx-b7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headphones" catalog="system" width="128" height="121"/>
+        <image name="istockphoto-1136216828-612x612-cutout" width="306" height="416"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

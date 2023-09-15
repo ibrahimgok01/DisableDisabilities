@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>999846219032-diiemcj3g1qociick1s0msep1tns6las.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.999846219032-diiemcj3g1qociick1s0msep1tns6las</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLe3VAw_JQiWaJZT9uKkbBIjHk4A4l4kM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>999846219032</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ibrahimgok.engelsizDuraklarPrototip1</string>
+	<key>PROJECT_ID</key>
+	<string>engelsiz-duraklar---prototip-1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>engelsiz-duraklar---prototip-1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:999846219032:ios:c282aba04e0fde963ae26d</string>
+</dict>
+</plist>
